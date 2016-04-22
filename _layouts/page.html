@@ -2,3 +2,19 @@
 layout: default
 ---
 
+
+<div class="side_bar">
+{% for side_link in site.pages %}
+    {% if side_link.pageTitle %}
+
+            <a href="{{ side_link.permalink }}"> {{ side_link.pageTitle }} </a>
+
+    {% endif %}
+
+{% endfor %}
+</div>
+
+
+    <h1> {{page.pageTitle}} </h1>
+
+{{content}}
