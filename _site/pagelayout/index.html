@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Layout</title>
+  <title>Page Layout</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
@@ -37,7 +37,7 @@
      <div class="row"> 
       <div class="col col-12 whole-page-wrapper">
           <div class="row"> 
-            <div class="col col-1 trigger-wrapper"> 
+            <div class="col col-2 trigger-wrapper"> 
               <div class="trigger">
                 
                   
@@ -45,11 +45,19 @@
                   
                 
                   
-                  <a class="page-link" href="/buttons/">Buttons</a>
+                  <a class="page-link" href="/buttons/">Buttons and Links</a>
                   
                 
                   
-                  <a class="page-link" href="/pagelayout/">Layout</a>
+                  <a class="page-link" href="/pagelayout/">Page Layout</a>
+                  
+                
+                  
+                  <a class="page-link" href="/forms/">Form Elements</a>
+                  
+                
+                  
+                  <a class="page-link" href="/colors/">Colors</a>
                   
                 
                   
@@ -63,9 +71,15 @@
             </div>
           
  
-            <div class="col col-10 page-content">
-              <div class="col col-6 content-wrapper">
+            <div class="col col-8 page-content">
+              <div class="col col-8 content-wrapper">
                 <div class="side_bar">
+
+    
+
+
+    
+
 
     
 
@@ -91,39 +105,45 @@
     <h1>  </h1>
 
 <h2>Page Layout</h2>
-<h3>The page should be laid out in a well-constructed and easy to navigate manner.</h3>
+<h3>The page should be laid out in a well-constructed and easy to navigate manner. The page should include a grid and be responsive.</h3>
 
 <h4>Grid</h4>
-<p>The grid provides an easy, organized, responsive site. The app should use a 12 column grid with a 2% gutter width.</p><br>
+<p>The grid provides an easy, organized, responsive site. The app should use a 12 column grid with a 2% gutter width. The HTML should be constructed with rows and columns so that the grid operates well and with clear organization throughout the code.</p><br>
 
 <nav>
-  <div class="toggle">
-    Grid Code
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <i class="fa fa-caret-right" aria-hidden="true"></i>
+  <div class="toggle1">
+    Grid Code (SCSS)
   </div>
-  <ul class="menu-content">
-    $tot-width: 100%;<br>
-	$num-col: 12;<br>
-	$gut-width: 2%;<br>
+  <div class="grid-css">
+    <br>
+    <img src="/Assets/GRID-CSS.png">
+  </div> 
+</nav><br>
 
-	$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;<br>
-
-	@mixin grid($geezy){<br>
-	  width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));<br>
-	  margin-right: $gut-width;<br>
-	  &:last-child {<br>
-    	margin-right: auto;<br>
-  	  }<br>
-	}  
+<nav>
+  <div class="toggle2">
+    Grid Code (HTML)
+  </div>
+  <ul class="grid-html">
+    <br>
+    <img src="/Assets/CSS-HTML.png">
   </ul> 
-</nav>
+</nav><br>
+
+<h4>Breakpoints</h4>
+<p>The app should be responsive so that it is easily and clearly legible across many platforms. Breakpoints will be used to implement that responsivity. The breakpoints can be nested in each defined class in the SCSS.</p>
+  <li>Desktop: 900px</li><br>
+  <li>Tablet: 650px</li><br>
+  <li>Mobile: Less than 650px</li><br>
+
+
+
+
+
+
+
+
+
               </div>
             </div>
           </div>  

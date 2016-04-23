@@ -26,6 +26,7 @@ p{
 	font-size: 16px;
 }
 
+
 /***HEADER***/
 
 .wrapper{
@@ -52,7 +53,7 @@ p{
 /***CONTENT***/
 
 .page-content{
-	height: 41em;
+	height: 44em;
 	overflow-y: auto;
 }
 
@@ -71,7 +72,7 @@ p{
 	font-family: $NavFont;
 	font-size: 16px;
 	padding: 2em 4em 1em 3em;
-	height: 40em;
+	height: 43em;
 	text-align: left;
 	float: left;
 
@@ -94,18 +95,131 @@ p{
 
 /***JQUERY STYLING***/
 
-.toggle{
-  font-family: $NavFont;
-  color: $FontColor;
-  border-bottom: 1px solid $FontColor;
-  font-size: 16px;
-  font-weight: 700;
-  padding-bottom: 0.2em;
-  cursor: pointer;
+%toggle{
+	font-family: $NavFont;
+	color: $FontColor;
+	border-bottom: 1px solid $FontColor;
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 0.2em;
+	cursor: pointer;
 }
 
-.menu-content{
+.toggle1{
+  @extend %toggle;
+}
+
+.toggle2{
+	@extend %toggle;
+}
+
+.grid-css{
   display: none;
 }
+
+.grid-html{
+  display: none;
+}
+
+/***BUTTONS***/
+
+.button-wrap{
+	overflow: hidden;
+	width: 27em;
+}
+
+%button{
+	color: $ButtonTextColor;
+	padding: 1em 2em 1em 2em;
+	width: 7em;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.primary-button{
+	@extend %button;
+	background-color: $PrimaryButtonColor;
+	border: 2px solid transparent;
+	float: left;
+}
+
+.primary-button-hover{
+	@extend %button;
+	background-color: $PrimaryHoverColor;
+	border: 2px solid transparent;
+	float: right;
+}
+
+.secondary-button{
+	@extend %button;
+	background-color: $SecondaryButtonColor;
+	border: 2px solid transparent;
+	float: left;
+}
+
+.secondary-button-hover{
+	@extend %button;
+	background-color: $SecondaryHoverColor;
+	border: 2px solid $SecondaryButtonColor;
+	float: right;
+}
+
+/***LINKS***/
+
+.a-link-example-wrap{
+	background-color: $ContentColor;
+	text-align: center;
+	width: 15em;
+}
+
+.a-link{
+	color: $FontColor;
+}
+
+.header-example{
+	background-color: $PrimaryColor;
+	text-align: center;
+	width: 15em;
+	padding: 1em 0 1em 0;
+}
+
+.a-header{
+	color: $HeaderFontColor;
+	text-decoration: none;
+}
+
+/***COLOR DISPLAY***/
+
+%color-display{
+	border-radius: 50%;
+	border: 2px solid black;
+	width: 7em;
+	height: 7em;
+	margin-left: 14em;
+}
+
+.color-display-red{
+	@extend %color-display;
+	background-color: $PrimaryColor;
+}
+
+.color-type{
+	margin-left: 15.5em;
+	color: $FontColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
