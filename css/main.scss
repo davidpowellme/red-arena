@@ -10,8 +10,16 @@
 
 
 .wrapper{
-	padding: 2em;
 	background-color: $PrimaryColor;
+	font-family: $HeaderFont;
+	padding: 0.5em;
+	font-weight: 700;
+	font-size: 32px;
+
+	a{
+		color: $HeaderFontColor;
+		text-decoration: none;
+	}
 }
 
 .whole-page-wrapper{
@@ -23,12 +31,17 @@
 }
 
 .trigger-wrapper{
-	background-color: #BADA55;;
+	background-color: $SecondaryColor;
+	font-family: $NavFont;
 	width: 10%;
 	height: 10em;
 	padding: 2em;
 	text-align: left;
 	float: left;
+
+	a{
+		color: $NavFontColor;
+	}
 
 }
 
@@ -37,7 +50,9 @@
 }
 
 .content-wrapper{
-	background-color: $SecondaryColor;
+	background-color: $ContentColor;
+	font-family: $NavFont;
+	color: $FontColor;
 	float: left;
 	padding: 1em;
 }

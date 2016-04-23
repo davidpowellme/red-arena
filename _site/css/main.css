@@ -97,24 +97,35 @@
     .col-12:last-child {
       margin-right: auto; } }
 .wrapper {
-  padding: 2em;
-  background-color: #D9181F; }
+  background-color: #D9181F;
+  font-family: Open Sans;
+  padding: 0.5em;
+  font-weight: 700;
+  font-size: 32px; }
+  .wrapper a {
+    color: #F2F2F0;
+    text-decoration: none; }
 
 .whole-page-wrapper {
   overflow: hidden; }
 
 .trigger-wrapper {
-  background-color: #BADA55;
+  background-color: #443939;
+  font-family: Open sans;
   width: 10%;
   height: 10em;
   padding: 2em;
   text-align: left;
   float: left; }
+  .trigger-wrapper a {
+    color: #F2F2F0; }
 
 .page-link {
   display: block; }
 
 .content-wrapper {
   background-color: #F2F2F0;
+  font-family: Open sans;
+  color: #47383B;
   float: left;
   padding: 1em; }
