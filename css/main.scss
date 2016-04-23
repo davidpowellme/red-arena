@@ -9,11 +9,16 @@
 @import "grid";	
 
 
+h2{
+	font-size: 24px;
+}
+
 .wrapper{
 	background-color: $PrimaryColor;
 	font-family: $HeaderFont;
+	text-transform: uppercase;
 	padding: 0.5em;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 32px;
 
 	a{

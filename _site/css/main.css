@@ -96,11 +96,15 @@
     margin-right: 2%; }
     .col-12:last-child {
       margin-right: auto; } }
+h2 {
+  font-size: 24px; }
+
 .wrapper {
   background-color: #D9181F;
   font-family: Open Sans;
+  text-transform: uppercase;
   padding: 0.5em;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 32px; }
   .wrapper a {
     color: #F2F2F0;
