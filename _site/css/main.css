@@ -99,37 +99,74 @@
 h2 {
   font-size: 24px; }
 
+h3 {
+  font-weight: 400; }
+
+h4 {
+  font-size: 16px; }
+
+p {
+  font-weight: 200;
+  font-size: 16px; }
+
+/***HEADER***/
 .wrapper {
   background-color: #D9181F;
   font-family: Open Sans;
   text-transform: uppercase;
-  padding: 0.5em;
+  padding: 1em 0.5em 1em 0.5em;
   font-weight: 800;
   font-size: 32px; }
   .wrapper a {
     color: #F2F2F0;
     text-decoration: none; }
 
+/***BODY ROW AND COLUMN***/
 .whole-page-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #F2F2F0; }
 
-.trigger-wrapper {
-  background-color: #443939;
-  font-family: Open sans;
-  width: 10%;
-  height: 10em;
-  padding: 2em;
-  text-align: left;
-  float: left; }
-  .trigger-wrapper a {
-    color: #F2F2F0; }
-
-.page-link {
-  display: block; }
+/***CONTENT***/
+.page-content {
+  height: 41em;
+  overflow-y: auto; }
 
 .content-wrapper {
   background-color: #F2F2F0;
-  font-family: Open sans;
+  font-family: Open Sans;
   color: #47383B;
   float: left;
   padding: 1em; }
+
+/***SIDE NAV BAR***/
+.trigger-wrapper {
+  background-color: #443939;
+  font-family: Open Sans;
+  font-size: 16px;
+  padding: 2em 4em 1em 3em;
+  height: 40em;
+  text-align: left;
+  float: left; }
+  .trigger-wrapper a {
+    color: #F2F2F0;
+    text-decoration: none; }
+
+.trigger {
+  line-height: 3; }
+
+.page-link {
+  display: block;
+  border-bottom: 1px solid white; }
+
+/***JQUERY STYLING***/
+.toggle {
+  font-family: Open Sans;
+  color: #47383B;
+  border-bottom: 1px solid #47383B;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 0.2em;
+  cursor: pointer; }
+
+.menu-content {
+  display: none; }

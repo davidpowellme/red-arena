@@ -13,11 +13,26 @@ h2{
 	font-size: 24px;
 }
 
+h3{
+	font-weight: 400;
+}
+
+h4{
+	font-size: 16px;
+}
+
+p{
+	font-weight: 200;
+	font-size: 16px;
+}
+
+/***HEADER***/
+
 .wrapper{
 	background-color: $PrimaryColor;
 	font-family: $HeaderFont;
 	text-transform: uppercase;
-	padding: 0.5em;
+	padding: 1em 0.5em 1em 0.5em;
 	font-weight: 800;
 	font-size: 32px;
 
@@ -27,31 +42,18 @@ h2{
 	}
 }
 
+/***BODY ROW AND COLUMN***/
+
 .whole-page-wrapper{
 	overflow: hidden;
+	background-color: $ContentColor;
 }
 
-.trigger{
-	
-}
+/***CONTENT***/
 
-.trigger-wrapper{
-	background-color: $SecondaryColor;
-	font-family: $NavFont;
-	width: 10%;
-	height: 10em;
-	padding: 2em;
-	text-align: left;
-	float: left;
-
-	a{
-		color: $NavFontColor;
-	}
-
-}
-
-.page-link{
-	display: block;
+.page-content{
+	height: 41em;
+	overflow-y: auto;
 }
 
 .content-wrapper{
@@ -60,6 +62,50 @@ h2{
 	color: $FontColor;
 	float: left;
 	padding: 1em;
+}
+
+/***SIDE NAV BAR***/
+
+.trigger-wrapper{
+	background-color: $SecondaryColor;
+	font-family: $NavFont;
+	font-size: 16px;
+	padding: 2em 4em 1em 3em;
+	height: 40em;
+	text-align: left;
+	float: left;
+
+	a{
+		color: $NavFontColor;
+		text-decoration: none;
+	}
+
+}
+
+.trigger{
+	line-height: 3;
+}
+
+
+.page-link{
+	display: block;
+	border-bottom: 1px solid white;
+}
+
+/***JQUERY STYLING***/
+
+.toggle{
+  font-family: $NavFont;
+  color: $FontColor;
+  border-bottom: 1px solid $FontColor;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 0.2em;
+  cursor: pointer;
+}
+
+.menu-content{
+  display: none;
 }
 
 
