@@ -35,11 +35,15 @@ p{
 	text-transform: uppercase;
 	padding: 1em 0.5em 1em 0.5em;
 	font-weight: 800;
-	font-size: 32px;
+	font-size: 24px;
 
 	a{
 		color: $ContentColor;
 		text-decoration: none;
+	}
+
+	@media (min-width: 650px){
+		font-size: 32px;
 	}
 }
 
@@ -53,16 +57,24 @@ p{
 /***CONTENT***/
 
 .page-content{
-	height: 44em;
-	overflow-y: auto;
+	
+
+	@media (min-width: 650px){
+		height: 44em;
+		overflow-y: auto;
+	}
 }
 
 .content-wrapper{
 	background-color: $ContentColor;
 	font-family: $NavFont;
 	color: $FontColor;
-	float: left;
 	padding: 1em;
+
+	@media  (min-width: 650px){
+		float: left;
+		
+	}
 }
 
 /***SIDE NAV BAR***/
@@ -70,15 +82,24 @@ p{
 .trigger-wrapper{
 	background-color: $SecondaryColor;
 	font-family: $NavFont;
-	font-size: 16px;
-	padding: 2em 4em 1em 3em;
-	height: 43em;
+	padding: 0.5em 4em 2em 3em;
+	font-size: 14px;
 	text-align: left;
-	float: left;
 
 	a{
 		color: $ContentColor;
 		text-decoration: none;
+	}
+
+	@media (min-width: 650px){
+		float: left;
+		height: 49em;
+		padding: 2em 4em 1em 3em;
+	}
+
+	@media (min-width: 900px){
+		height: 43em;
+		font-size: 16px;
 	}
 
 }
@@ -91,6 +112,20 @@ p{
 .page-link{
 	display: block;
 	border-bottom: 1px solid white;
+}
+
+/***PAGE LAYOUT***/
+
+.table-pic{
+	width: 23em;
+
+	@media (min-width: 650px){
+		width: 27em;
+	}
+
+	@media (min-width: 900px){
+		width: 100%;
+	}
 }
 
 /***JQUERY STYLING***/
@@ -183,26 +218,48 @@ p{
 
 .collapse-example1{
 	display: none;
-	margin-left: 9em;
+	text-align: center;
+	padding-bottom: 1em;
 }
 
 .collapse-example2{
+	background-color: $CardColor;
 	display: none;
-	margin-left: 9em;
+	text-align: center;
+	padding-bottom: 1em;
 }
 
 /***BUTTONS***/
 
 .button-wrap{
 	overflow: hidden;
-	width: 27em;
+	width: 20em;
+	margin-left: 1.5em;
+
+	@media (min-width: 650px){
+		margin-left: 0em;
+		width: 22em;
+	}
+
+	@media (min-width: 900px){
+		width: 27em;
+		margin-left: 4em;
+	}
 }
 
 %button{
 	padding: 1em 2em 1em 2em;
-	width: 7em;
+	width: 5em;
 	text-align: center;
 	border-radius: 6px;
+
+	@media (min-width: 650px){
+		width: 6em;
+	}
+
+	@media (min-width: 900px){
+		width: 7em;
+	}
 }
 
 .primary-button{
@@ -277,7 +334,15 @@ p{
 	background-color: $ContentColor;
 	text-align: center;
 	width: 15em;
-	margin-left: 9em;
+	margin-left: 3.5em;
+
+	@media (min-width: 650px){
+		margin-left: 5em;
+	}
+
+	@media (min-width: 900px){
+		margin-left: 9em;
+	}
 }
 
 .a-link{
@@ -293,7 +358,15 @@ p{
 	text-align: center;
 	width: 15em;
 	padding: 1em 0 1em 0;
-	margin-left: 9em;
+	margin-left: 3.5em;
+
+	@media (min-width: 650px){
+		margin-left: 5em;
+	}
+
+	@media (min-width: 900px){
+		margin-left: 9.5em;
+	}
 }
 
 .a-header{
@@ -301,23 +374,42 @@ p{
 	text-decoration: none;
 }
 
+.a-header-border{
+	color: $ContentColor;
+	text-decoration: none;
+	border: 2px solid $ContentColor;
+	padding: 0.5em;
+}
+
 /***COLOR DISPLAY***/
 
 .color-wrap{
 	overflow: hidden;
+	width: 100%;
 }
 
 .color-description{
-	float: left;
 	width: 22em;
-	margin-left: 2em;
-	margin-top: 0;
+	float: left;
+	margin-top: 1em;
 	font-weight: 200;
+
+	@media (min-width: 650px){
+		width: 16em;
+		float: right;
+		margin-right: 0em;
+		margin-top: 0;
+	}
+
+	@media (min-width: 900px){
+		width: 25em;
+		float: left;
+		margin-left: 1em;
+	}
 }
 
 .color-display-wrap{
 	float: left;
-	width: 7em;
 }
 
 %color-display{
@@ -325,6 +417,21 @@ p{
 	border: 2px solid black;
 	width: 7em;
 	height: 7em;
+	margin-left: 7em;
+
+	@media (min-width: 650px){
+		width: 4em;
+		height: 4em;
+		margin-left: 1em;
+		margin-top: 2em;
+	}
+
+	@media (min-width: 900px){
+		margin-top: 0em;
+		margin-left: 0em;
+		width: 7em;
+		height: 7em;
+	}
 }
 
 .color-display-red{
@@ -357,10 +464,30 @@ p{
 	background-color: $FontColor;
 }
 
+.color-display-card{
+	@extend %color-display;
+	background-color: $CardColor;
+}
+
+.color-display-card-alt{
+	@extend %color-display;
+	background-color: $CardAltColor;
+}
+
 
 .color-type{
 	color: $FontColor;
-	margin-left: 1.4em;
+	margin-left: 8.5em;
+
+	@media (min-width: 650px){
+		font-size: 14px;
+		margin-left: 1.2em;
+	}
+
+	@media (min-width: 900px){
+		font-size: 16px;
+		margin-left: 1.4em;
+	}
 }
 
 /***FORM ELEMENTS***/
