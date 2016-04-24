@@ -95,27 +95,30 @@ p{
 
 /***JQUERY STYLING***/
 
+.jquery-wrap1{
+	overflow: hidden;
+	border-bottom: 1px solid $FontColor;
+	padding-top: 0.2em;
+}
+
+.jquery-wrap2{
+	overflow: hidden;
+	background-color: $SecondaryColor;
+	padding-top: 0.2em;
+}
+
 %toggle{
 	font-family: $NavFont;
 	color: $FontColor;
-	border-bottom: 1px solid $FontColor;
 	font-size: 16px;
 	font-weight: 700;
 	padding-bottom: 0.2em;
 	padding-left: 0.5em;
-	cursor: pointer;
+	float: left;
 }
 
 .toggle1{
   @extend %toggle;
-}
-
-.toggle2{
-	@extend %toggle;
-}
-
-.toggle3{
-	@extend %toggle;
 }
 
 .toggle4{
@@ -124,8 +127,50 @@ p{
 	background-color: $SecondaryColor;
 	font-size: 16px;
 	font-weight: 400;
+	float: left;
+	padding: 0.7em 1em 0.2em 1em;
+	margin-bottom: 0.7em;
+}
+
+%arrow{
+	border-radius: 50%;
+	width: 1.35em;
+	height: 1.4em;
+	margin-right: 1em;
+	padding-left: 0.1em;
+	text-align: center;
+	border: 2px solid $PrimaryColor;
 	cursor: pointer;
-	padding: 0.5em 1em 0.5em 1em;
+	float: right;
+}
+
+.arrow1{
+	@extend %arrow;
+	margin-bottom: 0.5em;
+}
+
+.arrow2{
+	@extend %arrow;
+	color: $ContentColor;
+	margin-top: 0.5em;
+}
+
+.arrow3{
+	@extend %arrow;
+	margin-bottom: 0.5em;
+}
+
+.arrow4{
+	@extend %arrow;
+	margin-bottom: 0.5em;
+}
+
+.rotated {
+    -webkit-transform: rotate(90deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(90deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(90deg);  /* IE 9 */
+    -o-transform: rotate(90deg);  /* Opera 10.50-12.00 */
+    transform: rotate(90deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 .grid-css{
@@ -226,16 +271,13 @@ p{
 	color: $ContentColor;
 }
 
-
-
-
-
 /***LINKS***/
 
 .a-link-example-wrap{
 	background-color: $ContentColor;
 	text-align: center;
 	width: 15em;
+	margin-left: 9em;
 }
 
 .a-link{
@@ -251,6 +293,7 @@ p{
 	text-align: center;
 	width: 15em;
 	padding: 1em 0 1em 0;
+	margin-left: 9em;
 }
 
 .a-header{
