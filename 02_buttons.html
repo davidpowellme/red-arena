@@ -10,8 +10,9 @@ permalink: /buttons/
 <h3>There should be an abundance of clickable content throughout the app. There are certain styles to follow to ensure that these elements can be easily found and utilized by the user.</h3> 
 
 <h4>Buttons</h4>
-<p>The Buttons should be used in the app whenever the user wishes to submit content which they have decided to input. They should be easy to recognize and called out with colors and sizes. They should also follow uniform specifications to ensure a consistent flow throughout the site. Displayed buttons have a padding of 2em on the sides and 1em on the top and bottom. They have a width of 7em and a border radius of 2px.</p>
-<p>Primary buttons are the main button featured in the app. They should be featured in the main content pages of the site.
+<p>The Buttons should be used in the app whenever the user wishes to submit content which they have decided to input or make a choice between options. They should be easy to recognize and called out with colors and sizes. They should also follow uniform specifications to ensure a consistent flow throughout the site. Displayed buttons have a padding of 2em on the sides and 1em on the top and bottom. They have a width of 7em and a border radius of 2px. Buttons are not intended to be used in any headers or on the Primary Color of the site. The type should be in all caps.</p>
+
+<p>Primary buttons are the main button featured in the app. They should be featured in the main content, Content Colored background, pages of the site. They should not be used on the Primary or Secondary colors. They should be used as the main action by the user on form modals and pages. For example, all "Submit" buttons should be a Primary Button. Header Font should be used for text color.</p>
 		<div class="button-wrap">
 			<a href="#" class="a-header">
 				<div class="primary-button">BUTTON</div>
@@ -20,21 +21,73 @@ permalink: /buttons/
 				<div class="primary-button-hover">HOVER</div>
 			</a>		
 		</div>	
-<p>The secondary buttons should be used when there is a need for a button not featured on the main page and needs to better complement the secondary color of the site.</p> 		
+<p>The Secondary Buttons should be used when there is a need for a button not intended to be the main action of the page or form. The button itself is transparent over the colored backgroudnd with a Primary Color border of solid 2px. It can be used on the Content Color or Secondary Color backgrounds. The hover state of the button fills in the full button with Primary Color. They should be used as a secondary, or optional, action the user can take on a form modal or page.</p> 		
 		<div class="button-wrap">
-			<a href="#" class="a-header">
-				<div class="secondary-button">BUTTON</div>
-			</a>
 			<a href="#" class="a-header">	
-				<div class="secondary-button-hover">HOVER</div>	
+				<div class="secondary-button">BUTTON</div>	
 			</a>	
+			<a href="#" class="a-header">
+				<div class="secondary-button-hover">HOVER</div>
+			</a>
 		</div>	
+		<br>
+
+<p>An alternate Secondary Button should have Font Color for its type when Content Color is the background color. This is so the type is visible. On hover, the type should switch back to the Header Font used for other buttons.</p>
+	<div class="button-wrap">
+			<a href="#" class="a-header">	
+				<div class="alt-secondary-button">BUTTON</div>	
+			</a>	
+			<a href="#" class="a-header">
+				<div class="secondary-button-hover">HOVER</div>
+			</a>
+	</div>		
+
+<p>In instances where the user has two buttons to decide between two actions, the Primary Button should be the button with top hierarchy. For example, if the buttons are vertical, the Primary Button should be on top. When horizontal, the Primary Button should be on the left.</p>
+	<div class="button-wrap">
+		<a href="#" class="a-header">	
+			<div class="primary-button">APPROVE</div>	
+		</a>	
+		<a href="#" class="a-header">
+			<div class="alt-secondary-button2">DENY</div>
+		</a>
+	</div>	
+	<br>
+
+<h4>Collapsable Content</h4>
+<p>There are certain times in the app where content is hidden and can be revealed via a collapsable toggle click. This allows for more clean, simple outlines for the site. It is also an aid to the user, allowing them to only view the content needing immediate attention.<p>
+
+
+<p>For times when the collapsable content is located with the Content Color in the background, the simple line with a right chevron icon should suffice to call the users attention to it. The right chevron should also have a circular Primary color background.</p>
+
+	<nav>
+		<div class="toggle3">
+		    Collapsable Content Example A
+		</div>
+	  	<div class="collapse-example1">
+			<br>
+			Your content can now be viewed.
+		</div> 
+	</nav>
+	<br>
+
+<p>For times when the collapsable content is located on screens smaller than tablet size, the toggle click should be filled in with the Secondary Color. This will help achieve a variation of heirarchy across pages. The underline and icon should be present as before.</p>
+
+	<nav>
+		<div class="toggle4">
+		    Collapsable Content Example B
+		</div>
+	  	<div class="collapse-example2">
+			<br>
+			Your content can now be viewed.
+		</div> 
+	</nav>
+	<br>
 
 <h4>Links</h4>
 <p>There should be a link whenever there is a need to link to an outside page. When on the main content pages, the link should be underlined and have a color which helps call it out. The font color of the link should match the font color of Page Subheaders.</p>
 <p>
 	<div class="a-link-example-wrap">	
-		<a href="#" class="a-link">Example</a>
+		<a href="#" class="a-link-example">Example</a>
 	</div>	
 </p>
 <p>A link on the sites navigation should match the font color of the header's title. It should not be underlined. These links would take someone to their profile or the schedule page.</p>
@@ -42,5 +95,8 @@ permalink: /buttons/
 	<div class="header-example">
 		<a href="#" class="a-header">Example</a>
 	</div>	
-</p>	 
+</p>	
+
+
+
 		

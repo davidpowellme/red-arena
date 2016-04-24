@@ -38,7 +38,7 @@ p{
 	font-size: 32px;
 
 	a{
-		color: $HeaderFontColor;
+		color: $ContentColor;
 		text-decoration: none;
 	}
 }
@@ -77,7 +77,7 @@ p{
 	float: left;
 
 	a{
-		color: $NavFontColor;
+		color: $ContentColor;
 		text-decoration: none;
 	}
 
@@ -102,6 +102,7 @@ p{
 	font-size: 16px;
 	font-weight: 700;
 	padding-bottom: 0.2em;
+	padding-left: 0.5em;
 	cursor: pointer;
 }
 
@@ -113,12 +114,36 @@ p{
 	@extend %toggle;
 }
 
+.toggle3{
+	@extend %toggle;
+}
+
+.toggle4{
+	font-family: $NavFont;
+	color: $ContentColor;
+	background-color: $SecondaryColor;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
 .grid-css{
   display: none;
 }
 
 .grid-html{
   display: none;
+}
+
+.collapse-example1{
+	display: none;
+	margin-left: 9em;
+}
+
+.collapse-example2{
+	display: none;
+	margin-left: 9em;
 }
 
 /***BUTTONS***/
@@ -129,7 +154,6 @@ p{
 }
 
 %button{
-	color: $ButtonTextColor;
 	padding: 1em 2em 1em 2em;
 	width: 7em;
 	text-align: center;
@@ -138,13 +162,19 @@ p{
 
 .primary-button{
 	@extend %button;
+	color: $ContentColor;
 	background-color: $PrimaryButtonColor;
 	border: 2px solid transparent;
 	float: left;
 }
 
+.primary-button:hover{
+	background-color:$PrimaryHoverColor;
+}
+
 .primary-button-hover{
 	@extend %button;
+	color: $ContentColor;
 	background-color: $PrimaryHoverColor;
 	border: 2px solid transparent;
 	float: right;
@@ -152,17 +182,53 @@ p{
 
 .secondary-button{
 	@extend %button;
-	background-color: $SecondaryButtonColor;
-	border: 2px solid transparent;
+	color: $ContentColor;
+	background-color: $SecondaryColor;
+	border: 2px solid $PrimaryColor;
 	float: left;
+}
+
+.secondary-button:hover{
+	background-color: $PrimaryColor;
 }
 
 .secondary-button-hover{
 	@extend %button;
+	color: $ContentColor;
 	background-color: $SecondaryHoverColor;
-	border: 2px solid $SecondaryButtonColor;
+	border: 2px solid transparent;
 	float: right;
 }
+
+.alt-secondary-button{
+	@extend %button;
+	color: $SecondaryButtonTextColor;
+	background-color: $ContentColor;
+	border: 2px solid $PrimaryColor;
+	float: left;
+}
+
+.alt-secondary-button:hover{
+	background-color: $PrimaryColor;
+	color: $ContentColor;
+}
+
+.alt-secondary-button2{
+	@extend %button;
+	color: $SecondaryButtonTextColor;
+	background-color: $ContentColor;
+	border: 2px solid $PrimaryColor;
+	float: right;
+}
+
+.alt-secondary-button2:hover{
+	background-color: $PrimaryColor;
+	color: $ContentColor;
+}
+
+
+
+
 
 /***LINKS***/
 
@@ -173,7 +239,11 @@ p{
 }
 
 .a-link{
-	color: $FontColor;
+	color: $PrimaryColor;
+}
+
+.a-link-example{
+	color: $PrimaryColor;
 }
 
 .header-example{
@@ -184,18 +254,34 @@ p{
 }
 
 .a-header{
-	color: $HeaderFontColor;
+	color: $ContentColor;
 	text-decoration: none;
 }
 
 /***COLOR DISPLAY***/
+
+.color-wrap{
+	overflow: hidden;
+}
+
+.color-description{
+	float: left;
+	width: 22em;
+	margin-left: 2em;
+	margin-top: 0;
+	font-weight: 200;
+}
+
+.color-display-wrap{
+	float: left;
+	width: 7em;
+}
 
 %color-display{
 	border-radius: 50%;
 	border: 2px solid black;
 	width: 7em;
 	height: 7em;
-	margin-left: 14em;
 }
 
 .color-display-red{
@@ -203,9 +289,53 @@ p{
 	background-color: $PrimaryColor;
 }
 
+.color-display-grey{
+	@extend %color-display;
+	background-color: $SecondaryColor;
+}
+
+.color-display-content{
+	@extend %color-display;
+	background-color: $ContentColor;
+}
+
+.color-display-primary-button{
+	@extend %color-display;
+	background-color: $PrimaryButtonColor;
+}
+
+.color-display-primary-button-hover{
+	@extend %color-display;
+	background-color: $PrimaryHoverColor;
+}
+
+.color-display-font{
+	@extend %color-display;
+	background-color: $FontColor;
+}
+
+
 .color-type{
-	margin-left: 15.5em;
 	color: $FontColor;
+	margin-left: 1.4em;
+}
+
+/***FORM ELEMENTS***/
+
+.input-form{
+	border: 2px solid $FontColor;
+	width: 17.25em;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.error-form{
+	border: 2px solid $PrimaryColor;
+	color: $PrimaryColor;
+	font-weight: 800;
+	width: 17.25em;
+	text-align: center;
+	padding: 0.5em;
 }
 
 
