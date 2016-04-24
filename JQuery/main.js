@@ -1,15 +1,39 @@
-$('.toggle1').click(function(){
+
+//Grid SCSS Example
+$('.arrow3').click(function(){
   $('.grid-css').slideToggle(1000);
 });
 
-$('.toggle2').click(function(){
+$('.arrow3').click(function(){
+	$(this).toggleClass('rotated');
+});
+
+
+//Grid HTML Example
+$('.arrow4').click(function(){
   $('.grid-html').slideToggle(1000);
 });
 
-$('.toggle3').click(function(){
+$('.arrow4').click(function(){
+	$(this).toggleClass('rotated');
+});
+
+
+//Collapse Example A
+$('.arrow1').click(function(){
   $('.collapse-example1').slideToggle(1000);
 });
 
-$('.toggle4').click(function(){
+$('.arrow1').click(function(){
+	$(this).toggleClass('rotated');
+});
+
+
+//Collapse Example B
+$('.arrow2').click(function(){
   $('.collapse-example2').slideToggle(1000);
+});
+
+$('.arrow2').click(function(){
+	$(this).toggleClass('rotated');
 });
