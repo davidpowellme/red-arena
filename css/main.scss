@@ -114,6 +114,7 @@ p{
 	border-bottom: 1px solid white;
 }
 
+
 /***PAGE LAYOUT***/
 
 .table-pic{
@@ -350,7 +351,7 @@ p{
 	}
 
 	@media (min-width: 900px){
-		margin-left: 9em;
+		margin-left: 9.5em;
 	}
 }
 
@@ -481,6 +482,11 @@ p{
 .color-display-card-alt{
 	@extend %color-display;
 	background-color: $CardAltColor;
+}
+
+.color-display-passive{
+	@extend %color-display;
+	background-color: $PassiveColor;
 }
 
 

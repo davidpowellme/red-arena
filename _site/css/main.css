@@ -343,7 +343,7 @@ p {
       margin-left: 5em; } }
   @media (min-width: 900px) {
     .a-link-example-wrap {
-      margin-left: 9em; } }
+      margin-left: 9.5em; } }
 
 .a-link {
   color: #D9181F; }
@@ -399,20 +399,20 @@ p {
 .color-display-wrap {
   float: left; }
 
-.color-display-red, .color-display-grey, .color-display-content, .color-display-primary-button, .color-display-primary-button-hover, .color-display-font, .color-display-card, .color-display-card-alt {
+.color-display-red, .color-display-grey, .color-display-content, .color-display-primary-button, .color-display-primary-button-hover, .color-display-font, .color-display-card, .color-display-card-alt, .color-display-passive {
   border-radius: 50%;
   border: 2px solid black;
   width: 7em;
   height: 7em;
   margin-left: 7em; }
   @media (min-width: 650px) {
-    .color-display-red, .color-display-grey, .color-display-content, .color-display-primary-button, .color-display-primary-button-hover, .color-display-font, .color-display-card, .color-display-card-alt {
+    .color-display-red, .color-display-grey, .color-display-content, .color-display-primary-button, .color-display-primary-button-hover, .color-display-font, .color-display-card, .color-display-card-alt, .color-display-passive {
       width: 4em;
       height: 4em;
       margin-left: 1em;
       margin-top: 2em; } }
   @media (min-width: 900px) {
-    .color-display-red, .color-display-grey, .color-display-content, .color-display-primary-button, .color-display-primary-button-hover, .color-display-font, .color-display-card, .color-display-card-alt {
+    .color-display-red, .color-display-grey, .color-display-content, .color-display-primary-button, .color-display-primary-button-hover, .color-display-font, .color-display-card, .color-display-card-alt, .color-display-passive {
       margin-top: 0em;
       margin-left: 0em;
       width: 7em;
@@ -441,6 +441,9 @@ p {
 
 .color-display-card-alt {
   background-color: #C6EBE3; }
+
+.color-display-passive {
+  background-color: #DFDFDD; }
 
 .color-type {
   color: #47383B;
