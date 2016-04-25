@@ -197,7 +197,7 @@ p {
   padding: 0.7em 1em 0.2em 1em;
   margin-bottom: 0.7em; }
 
-.arrow1, .arrow2, .arrow3, .arrow4 {
+.arrow1, .arrow2, .arrow3, .arrow4, .arrow5 {
   border-radius: 50%;
   width: 1.35em;
   height: 1.4em;
@@ -219,6 +219,9 @@ p {
   margin-bottom: 0.5em; }
 
 .arrow4 {
+  margin-bottom: 0.5em; }
+
+.arrow5 {
   margin-bottom: 0.5em; }
 
 .rotated {
@@ -249,6 +252,9 @@ p {
   display: none;
   text-align: center;
   padding-bottom: 1em; }
+
+.modal-example {
+  display: none; }
 
 /***BUTTONS***/
 .button-wrap {

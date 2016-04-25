@@ -37,3 +37,19 @@ $('.arrow2').click(function(){
 $('.arrow2').click(function(){
 	$(this).toggleClass('rotated');
 });
+
+//Form Modal Example
+$('.arrow5').click(function(){
+  $('.modal-example').slideToggle(1000);
+});
+
+$('.arrow5').click(function(){
+	$(this).toggleClass('rotated');
+});
+
+
+
+
+
+
+

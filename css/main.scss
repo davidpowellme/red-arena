@@ -200,6 +200,11 @@ p{
 	margin-bottom: 0.5em;
 }
 
+.arrow5{
+	@extend %arrow;
+	margin-bottom: 0.5em;
+}
+
 .rotated {
     -webkit-transform: rotate(90deg);  /* Chrome, Safari 3.1+ */
     -moz-transform: rotate(90deg);  /* Firefox 3.5-15 */
@@ -227,6 +232,10 @@ p{
 	display: none;
 	text-align: center;
 	padding-bottom: 1em;
+}
+
+.modal-example{
+	display: none;
 }
 
 /***BUTTONS***/
